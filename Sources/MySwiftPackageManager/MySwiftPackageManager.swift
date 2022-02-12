@@ -1,6 +1,11 @@
 public struct MySwiftPackageManager {
-    public private(set) var text = "Hello, World!"
+    private let text = "Hello, World!"
 
     public init() {
     }
+    
+    public func sayHello() -> String {
+        return text
+    }
+    
 }
